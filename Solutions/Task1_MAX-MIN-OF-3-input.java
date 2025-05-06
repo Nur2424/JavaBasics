@@ -1,3 +1,11 @@
+/*
+You have variables x1, x2, x3 that contain user input.
+
+Write code that finds the maximum and minimum number among x1, x2, x3,
+and stores the result in a variable called result.
+*/
+
+
 import java.util.Scanner;
 
 public class Main {
