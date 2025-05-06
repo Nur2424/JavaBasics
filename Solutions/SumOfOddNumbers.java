@@ -1,3 +1,20 @@
+/*
+
+You have a variable n that contains user input.
+
+n always contains an odd number.
+
+Write code that returns the sum of all odd numbers up to n (inclusive) and stores the result in the variable result.
+
+For example:
+
+If n = 3, then 1 + 3 = 4
+If n = 5, then 1 + 3 + 5 = 9
+If n = 7, then 1 + 3 + 5 + 7 = 16
+And so on.
+
+*/
+
 import java.util.Scanner;
 
 public class Main {
