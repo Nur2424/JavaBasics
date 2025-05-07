@@ -114,3 +114,81 @@ class Library {
     }
 }
 
+
+/*
+===========================================
+  🌟 QUICK OOP CONCEPTS IN JAVA (BEGINNER)
+===========================================
+
+1. CLASS
+- A class is a blueprint for creating objects.
+- Класс — это план создания объектов.
+Example:
+  class Book {
+      String title;
+      void read() { }
+  }
+
+2. OBJECT
+- An object is an instance of a class.
+- Объект — это экземпляр класса.
+Example:
+  Book myBook = new Book();
+
+3. ENCAPSULATION
+- Hides internal data using private variables and public methods (getters/setters).
+Example:
+  private String title;
+  public String getTitle() {
+      return title;
+  }
+
+4. METHOD
+- A method defines an action or behavior in a class.
+Example:
+  public void borrow() {
+      isBorrowed = true;
+  }
+
+5. CONSTRUCTOR
+- A special method called when creating a new object.
+Example:
+  public Book(String title) {
+      this.title = title;
+  }
+
+6. INHERITANCE
+- Allows one class to inherit features (fields and methods) from another.
+Example:
+  class Ebook extends Book {
+      int fileSize;
+  }
+
+7. POLYMORPHISM
+- The same method behaves differently depending on the object.
+Example:
+  class Book {
+      void read() { System.out.println("Reading a book"); }
+  }
+  class Comic extends Book {
+      void read() { System.out.println("Reading a comic"); }
+  }
+
+8. ABSTRACTION
+- Hides unnecessary details; shows only essential parts.
+Example:
+  abstract class Shape {
+      abstract void draw();
+  }
+
+9. ARRAYS AND COLLECTIONS
+- You can store multiple objects in arrays or ArrayLists.
+Example:
+  Book[] books = new Book[5];
+
+===========================================
+You are already using many of these in your
+Library & Book program!
+===========================================
+*/
+
