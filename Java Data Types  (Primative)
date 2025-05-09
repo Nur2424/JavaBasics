@@ -1,0 +1,140 @@
+8 Primitive Data Types
+
+#-------------------------------------------------------------------------------------------------------
+1. boolean type
+
+ ° The boolean data type has two possible values, either true or false.
+ ° Default value: false.
+ ° They are usually used for true/false conditions.
+
+#-------------------------------------------------------------------------------------------------------
+2. byte type
+
+ ° The byte data type can have values from -128 to 127 (8-bit signed two's complement integer).
+ ° If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int to save memory.
+ ° Default value: 0
+
+#-------------------------------------------------------------------------------------------------------
+3. short type
+
+ ° The short data type in Java can have values from -32768 to 32767 (16-bit signed two's complement integer).
+ ° If it's certain that the value of a variable will be within -32768 and 32767, then it is used instead of other integer data types (int, long).
+ ° Default value: 0
+
+/*
+| Data Type | Size     | Value Range             | When to Use                        |
+|-----------|----------|-------------------------|------------------------------------|
+| short     | 2 bytes  | -32,768 to 32,767       | When memory is limited and values  |
+|           |          |                         | stay within this range             |
+| int       | 4 bytes  | -2,147,483,648 to       | Default for integer values; used   |
+|           |          | 2,147,483,647           | when you don't need to optimize    |
+|           |          |                         | memory as much                    |
+*/
+
+#-------------------------------------------------------------------------------------------------------
+4. int type
+
+ ° The int data type can have values from -231 to 231-1 (32-bit signed two's complement integer).
+ ° If you are using Java 8 or later, you can use an unsigned 32-bit integer. This will have a minimum value of 0 and a maximum value of 232-1. To learn more, visit How to use the unsigned integer in java 8?
+ ° Default value: 0
+
+#-------------------------------------------------------------------------------------------------------
+5. long type
+
+ ° The long data type can have values from -263 to 263-1 (64-bit signed two's complement integer).
+ ° If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a maximum value of 264-1.
+ ° Default value: 0
+
+# - - - - - - - - - - - - EXAMPLE - - - - - - - - - - - - 
+
+class LongExample {
+  public static void main(String[] args) {
+    	
+    long range = -42332200000L;
+    System.out.println(range);    // prints -42332200000
+  }
+}
+
+Notice, the use of L at the end of -42332200000. This represents that it's an integer of the long type.
+
+#-------------------------------------------------------------------------------------------------------
+6. double type
+
+ ° The double data type is a double-precision 64-bit floating-point.
+ ° It should never be used for precise values such as currency.
+ ° Default value: 0.0 (0.0d)
+
+#-------------------------------------------------------------------------------------------------------
+7. float type
+
+ ° The float data type is a single-precision 32-bit floating-point. Learn more about single-precision and double-precision floating-point if you are interested.
+ ° It should never be used for precise values such as currency.
+ ° Default value: 0.0 (0.0f)
+
+/* 
+| Data Type | Size     | Precision (Decimal Digits) | Suffix Required  | Example Value           | When to Use                           |
+|-----------|----------|----------------------------|------------------|-------------------------|---------------------------------------|
+| float     | 4 bytes  | ~7 digits                  | Yes ('f' or 'F') | 1.1234567f              | When memory is limited or precision is not critical |
+| double    | 8 bytes  | ~15-16 digits              | No               | 1.123456789012345       | Default for decimal numbers, better precision |
+*/
+
+# - - - - - - - - - - - - EXAMPLE - - - - - - - - - - - - 
+
+class Main {
+  public static void main(String[] args) {
+    	
+    float number = -42.3f;
+    System.out.println(number);  // prints -42.3
+  }
+}
+
+Notice that we have used -42.3f instead of -42.3in the above program. It's because -42.3 is a double literal.
+
+To tell the compiler to treat -42.3 as float rather than double, you need to use f or F.
+
+#-------------------------------------------------------------------------------------------------------
+8. char type
+
+ ° It's a 16-bit Unicode character.
+ ° The minimum value of the char data type is '\u0000' (0) and the maximum value of the is '\uffff'.
+ ° Default value: '\u0000'
+
+# - - - - - - - - - - - - EXAMPLE - - - - - - - - - - - - 
+
+class Main {
+  public static void main(String[] args) {
+    	
+    char letter = '\u0051';
+    System.out.println(letter);  // prints Q
+  }
+}
+
+# - - - - - - - - - - - - EXAMPLE - - - - - - - - - - - - 
+
+
+class Main {
+  public static void main(String[] args) {
+    	
+    char letter1 = '9';
+    System.out.println(letter1);  // prints 9
+    	
+    char letter2 = 65;
+    System.out.println(letter2);  // prints A
+
+  }
+}
+
+Here, we have assigned 9 as a character (specified by single quotes) to the letter1 variable. However, the letter2 variable is assigned 65 as an integer number (no single quotes).
+
+Hence, A is printed to the output. It is because Java treats characters as an integer and the ASCII value of A is 65. 
+
+
+
+
+
+
+
+
+
+
+
